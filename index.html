@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <aside>
+           
+         <div class="top">
+           <div class="logo">
+             <h2>Easy<span class="danger">Leave</span> </h2>
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+          <div class="sidebar">
+
+            <a href="#">
+              <span class="material-symbols-sharp">grid_view </span>
+              <h3>Dashbord</h3>
+           </a>
+           <a href="#" class="active">
+              <span class="material-symbols-sharp">person_outline </span>
+              <h3>custumers</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">insights </span>
+              <h3>Analytics</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">mail_outline </span>
+              <h3>Messages</h3>
+              <span class="msg_count">14</span>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">receipt_long </span>
+              <h3>Products</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">report_gmailerrorred </span>
+              <h3>Reports</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">settings </span>
+              <h3>settings</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">add </span>
+              <h3>Add Product</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout </span>
+              <h3>logout</h3>
+           </a>
+             
+
+
+          </div>
+
+      </aside>
+      <!-- --------------
+        end asid
+      -------------------- -->
+
+      <!-- --------------
+        start main part
+      --------------- -->
+
+      <main>
+      <div class="recent_order">
+         <h2>Request A Leave</h2>
+         <form action="/submit-leave-request" method="post">
+          <h2>Leave Request Form</h2>
+          <div>
+              <label for="employee-name">Name:</label>
+              <input type="text" id="employee-name" name="employee-name" required>
+          </div>
+          <div>
+              <label for="employee-email">Email:</label>
+              <input type="email" id="employee-email" name="employee-email" required>
+          </div>
+          <div>
+              <label for="employee-position">Position:</label>
+              <input type="text" id="employee-position" name="employee-position" required>
+          </div>
+          <div>
+              <label for="leave-type">Type of Leave:</label>
+              <select id="leave-type" name="leave-type" required>
+                  <option value="">Select leave type</option>
+                  <option value="sick">Sick Leave</option>
+                  <option value="vacation">Vacation Leave</option>
+                  <option value="personal">Personal Leave</option>
+                  <option value="maternity">Maternity Leave</option>
+                  <option value="paternity">Paternity Leave</option>
+              </select>
+          </div>
+          <div>
+              <label for="leave-start-date">Start Date:</label>
+              <input type="date" id="leave-start-date" name="leave-start-date" required>
+          </div>
+          <div>
+              <label for="leave-end-date">End Date:</label>
+              <input type="date" id="leave-end-date" name="leave-end-date" required>
+          </div>
+          <div>
+              <label for="leave-reason">Reason for Leave:</label>
+              <textarea id="leave-reason" name="leave-reason" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit Request</button>
+      </form>
+      </div>
+
+      </main>
+      <!------------------
+         end main
+        ------------------->
+
+      <!----------------
+        start right main 
+      ---------------------->
+    <div class="right">
+
+<div class="top">
+   <button id="menu_bar">
+     <span class="material-symbols-sharp">menu</span>
+   </button>
+
+   <!-- <div class="theme-toggler">
+     <span class="material-symbols-sharp active">light_mode</span>
+     <span class="material-symbols-sharp">dark_mode</span>
+   </div> -->
+    <div class="profile">
+       <div class="info">
+           <p><b>Employee Name</b></p>
+           <p>Software Engineer</p>
+           <small class="text-muted"></small>
+       </div>
+       <div class="profile-photo">
+         <img src="./images/profile-1.jpg" alt=""/>
+       </div>
+    </div>
+</div>
+
+  <div class="recent_updates">
+     <h2>Recent Update</h2>
+   <div class="updates">
+      <div class="update">
+         <div class="profile-photo">
+            <img src="./images/profile-4.jpg" alt=""/>
+         </div>
+        <div class="message">
+           <p><b>Sarah</b> has been promoted</p>
+        </div>
+      </div>
+      <div class="update">
+        <div class="profile-photo">
+        <img src="./images/profile-3.jpg" alt=""/>
+        </div>
+       <div class="message">
+          <p><b>Jennifer</b> has requested a leave</p>
+       </div>
+     </div>
+     <div class="update">
+      <div class="profile-photo">
+         <img src="./images/profile-2.jpg" alt=""/>
+      </div>
+     <div class="message">
+        <p><b>Ramzan</b> has been promoted</p>
+     </div>
+   </div>
+  </div>
+  </div>
+
+
+   <div class="sales-analytics">
+     <h2>Sales Analytics</h2>
+
+      <div class="item onlion">
+        <div class="icon">
+          <span class="material-symbols-sharp">shopping_cart</span>
+        </div>
+        <div class="right_text">
+          <div class="info">
+            <h3>Onlion Orders</h3>
+            <small class="text-muted">Last seen 2 Hours</small>
+          </div>
+          <h5 class="danger">-17%</h5>
+          <h3>3849</h3>
+        </div>
+      </div>
+      <div class="item onlion">
+        <div class="icon">
+          <span class="material-symbols-sharp">shopping_cart</span>
+        </div>
+        <div class="right_text">
+          <div class="info">
+            <h3>Onlion Orders</h3>
+            <small class="text-muted">Last seen 2 Hours</small>
+          </div>
+          <h5 class="success">-17%</h5>
+          <h3>3849</h3>
+        </div>
+      </div>
+   
+  
+
+</div>
+</div>
+
+
+   </div>
+
+
+
+   <script src="script.js"></script>
+</body>
+</html>
